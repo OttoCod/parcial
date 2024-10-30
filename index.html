@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria OV</title>
+    <link rel="stylesheet" href="ov_css/ov_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="ov_header">
+        <nav class="ov_nav">
+            <img src="ov_imagenes/ov_logo.jpg" alt="Logo" class="ov_logo">
+            <ul class="ov_menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="ov_hero">
+            <h1>Encuentra tu hogar ideal</h1>
+            <p>Las mejores propiedades en la mejor ubicación</p>
+        </section>
+
+        <section id="propiedades" class="ov_propiedades">
+            <h2>Propiedades Destacadas</h2>
+            <div class="ov_carousel">
+                <!-- Las propiedades se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <section id="contacto" class="ov_contacto">
+            <h2>Contáctanos</h2>
+            <form action="ov_php/ov_procesar.php" method="POST" class="ov_form">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="ov_footer">
+        <p>&copy; 2024 Inmobiliaria OV. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="ov_js/ov_scripts.js"></script>
+</body>
+</html>
